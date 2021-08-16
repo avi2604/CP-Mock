@@ -1,0 +1,163 @@
+@import "../../styles/library.less";
+
+.side-bar {
+  font-family: CpRegular;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 256px;
+  height: 100vh;
+  border-right: 1px solid @Cp-Gray;
+
+  .cp-logo {
+    margin: 32px auto 16px auto;
+  }
+
+  .sidebar-card {
+    display: flex;
+    max-width: 224px;
+    width: 100%;
+    max-height: 68px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid @Cp-Gray;
+    background-color: @Cp-white;
+    margin: 0px auto;
+
+    .card-inner-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      background-color: @Cp-primary-green;
+      border-radius: 4px;
+      margin: 16px 12px;
+
+      .card-inner-test {
+        color: @Cp-regular-green;
+        font-size: 14px;
+        font-family: CpSemiBold;
+      }
+    }
+
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .card-icon {
+      align-self: center;
+      margin-right: 16px;
+    }
+
+  }
+
+  .sidebar-nav-tabs {
+    margin: 24px 0px 54px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .tab-wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 65px;
+      cursor: pointer;
+
+      .tab-wrapper-inner {
+        .border-left {
+          width: 4px;
+          height: 36px;
+          margin-right: 36px;
+        }
+
+        .active-border {
+          background-color: @Cp-regular-green;
+        }
+
+        .icon {
+          height: 24px;
+          width: 24px;
+        }
+
+        .account-icon {
+          background: url("./../../assets/Icons/account-Icon.svg") no-repeat;
+        }
+
+        .active-account-icon {
+          background: url("./../../assets/Icons/account-Icon-active.svg") no-repeat;
+        }
+
+        .payments-icon {
+          background: url("./../../assets/Icons/right-arrow-icon.svg") no-repeat;
+        }
+
+        .active-payments-icon {
+          background: url("./../../assets/Icons/right-arrow-icon-active.svg") no-repeat;
+        }
+
+        .bpayment-icon {
+          background: url("./../../assets/Icons/arrow-fat-line-right-icon.svg") no-repeat;
+        }
+
+        .active-bpayment-icon {
+          background: url("./../../assets/Icons/arrow-fat-line-right-icon-active.svg") no-repeat;
+        }
+
+        .card-icon {
+          background: url("./../../assets/Icons/card-icon.svg") no-repeat;
+        }
+
+        .card-icon-active {
+          background: url("./../../assets/Icons/card-icon-active.svg") no-repeat;
+        }
+
+        .message-icon {
+          background: url("./../../assets/Icons/chat-icon.svg") no-repeat;
+        }
+
+        .message-icon-active {
+          background: url("./../../assets/Icons/chat-icon-active.svg") no-repeat;
+        }
+
+        .setting-icon {
+          background: url("./../../assets/Icons/setting-icon.svg") no-repeat;
+        }
+
+        .setting-icon-active {
+          background: url("./../../assets/Icons/setting-icon-active.svg") no-repeat;
+        }
+
+        .profile-icon {
+          background: url("./../../assets/Icons/user-circle.svg") no-repeat;
+        }
+
+        .profile-icon-active {
+          background: url("./../../assets/Icons/user-circle-active.svg") no-repeat;
+        }
+
+        .sign-out-icon {
+          background: url("./../../assets/Icons/sign-out-icon.svg") no-repeat;
+        }
+
+        .sign-out-icon-active {
+          background: url("./../../assets/Icons/sign-out-icon-active.svg") no-repeat;
+        }
+
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+    }
+
+    .flex-grow {
+      flex-grow: 1;
+    }
+  }
+
+}

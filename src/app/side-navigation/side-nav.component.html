@@ -1,0 +1,114 @@
+<div class="side-bar">
+    <!-- logo -->
+    <div class="cp-logo">
+        <img src="./../assets/Icons/cp-logo.svg" alt="cp-logo">
+    </div>
+
+    <!-- client card -->
+    <div class="sidebar-card">
+        <div class="card-inner-box">
+            <span class="card-inner-test">
+                A
+            </span>
+        </div>
+        <div class="card-text">
+            <span class="cp-text-14-semibold">Autoplius</span>
+            <span class="cp-text-12-regular-gray">Lukas Bytautas</span>
+        </div>
+        <div class="card-icon">
+            <img src="./../assets/Icons/chevron_down_16.svg" alt="chevron_down_16">
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="sidebar-nav-tabs">
+        <!-- Accounts Tab -->
+        <div class="tab-wrapper" (click)="selectTab('accounts')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'accounts'}"></div>
+                <div class="icon" [ngClass]="tabName == 'accounts' ? 'active-account-icon' : 'account-icon'"></div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'accounts' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">Accounts</span>
+            </div>
+        </div>
+
+        <!-- Payment Tab -->
+        <div class="tab-wrapper" (click)="selectTab('payments')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'payments'}"></div>
+                <div class="icon" [ngClass]="tabName == 'payments' ? 'active-payments-icon' : 'payments-icon'"></div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'payments' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">Payments</span>
+            </div>
+        </div>
+
+        <!-- Bulk Payment Tab -->
+        <div class="tab-wrapper" (click)="selectTab('bulkPayments')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'bulkPayments'}"></div>
+                <div class="icon" [ngClass]="tabName == 'bulkPayments' ? 'active-bpayment-icon' : 'bpayment-icon'">
+                </div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'bulkPayments' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">Bulk
+                    Payments</span>
+            </div>
+        </div>
+
+        <!-- Cards Tab -->
+        <div class="tab-wrapper" (click)="selectTab('cards')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'cards'}"></div>
+                <div class="icon" [ngClass]="tabName == 'cards' ? 'card-icon-active' : 'card-icon'"></div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'cards' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">Cards</span>
+            </div>
+        </div>
+
+        <!-- Messages Tab -->
+        <div class="tab-wrapper" (click)="selectTab('messages')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'messages'}"></div>
+                <div class="icon" [ngClass]="tabName == 'messages' ? 'message-icon-active' : 'message-icon'"></div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'messages' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">Messages</span>
+            </div>
+        </div>
+
+        <!-- Setting Tab -->
+        <div class="tab-wrapper" (click)="selectTab('settings')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'settings'}"></div>
+                <div class="icon" [ngClass]="tabName == 'settings' ? 'setting-icon-active' : 'setting-icon'"></div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'settings' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">Settings</span>
+            </div>
+        </div>
+
+        <div class="flex-grow"></div>
+
+        <!-- My Profile Tab -->
+        <div class="tab-wrapper" (click)="selectTab('profile')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'profile'}"></div>
+                <div class="icon" [ngClass]="tabName == 'profile' ? 'profile-icon-active' : 'profile-icon'"></div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'profile' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">My Profile</span>
+            </div>
+        </div>
+
+        <!-- Sign Out Tab -->
+        <div class="tab-wrapper" (click)="selectTab('logOut')">
+            <div class="tab-wrapper-inner">
+                <div class="border-left" [ngClass]="{'active-border': tabName == 'logOut'}"></div>
+                <div class="icon" [ngClass]="tabName == 'logOut' ? 'sign-out-icon-active' : 'sign-out-icon'"></div>
+                <span class="cp-ml-12"
+                    [ngClass]="tabName == 'logOut' ? 'cp-text-16-semibold' : 'cp-text-16-regular' ">Log Out</span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
